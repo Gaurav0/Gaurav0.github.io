@@ -1,0 +1,30 @@
+        <h1>Projects</h1>
+		<ul class="tiles">
+			{{#each controller}}
+			<li>{{#linkTo project this}}<img {{bindAttr src="thumb"}}><br>{{title}}{{/linkTo}}</li>
+			{{/each}}
+		</ul>
+		{{outlet}}
+		<!--
+        <section>
+            <h1>Old School RPG Demo</h1>
+            <a href="http://gaurav0.github.com/Old-School-RPG-Map"><img src="images/rpg.jpg"></a>
+            <p>This is a demo of an old school console style JRPG, perhaps like Dragon Warrior or Final Fantasy for the original NES, written in HTML5.</p>
+            <p><a href="http://gaurav0.github.com/Old-School-RPG-Map">Play Now</a></p>
+            <p><a href="https://github.com/Gaurav0/Old-School-RPG-Map">View Source Code</a></p>
+        </section>
+        <section>
+            <h1>Space &rsquo;Em</h1>
+            <a href="http://gaurav0.github.com/ACM-Space-Shooter/spaceshooter.html"><img src="images/spaceem.png"></a>
+            <p>A simple, fun HTML5 Space Shooter. Playable via keyboard, mouse or touch.</p>
+            <p><a href="http://gaurav0.github.com/ACM-Space-Shooter/spaceshooter.html">Play Now</a></p>
+            <p><a href="https://github.com/Gaurav0/ACM-Space-Shooter">View Source Code</a></p>
+        </section>
+        <section>
+            <h1>Infinite Graffiti Wall</h1>
+            <a href="http://infinitegraffitiwall.appspot.com"><img src="images/wall.jpg"></a>
+            <p>An infinite graffiti wall on which anyone can draw. Written using Python / HTML5 / Google App Engine.</p>
+            <p><a href="http://infinitegraffitiwall.appspot.com">Try it Now</a></p>
+            <p><a href="https://bitbucket.org/Gaurav0/infinitegraffitiwall">View Source Code</a></p>
+        </section>
+		-->

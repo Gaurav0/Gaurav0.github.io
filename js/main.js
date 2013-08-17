@@ -14,6 +14,8 @@
 			"router",
 			"routes/projects",
 			"routes/project"
-		], function(){});
+		], function(App) {
+			App.advanceReadiness();
+		});
 	});
 })(this);

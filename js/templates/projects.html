@@ -1,7 +1,7 @@
         <h1>Projects</h1>
 		<ul class="tiles">
-			{{#each controller}}
-			<li>{{#linkTo project this}}<img {{bindAttr src="thumb"}}><br>{{title}}{{/linkTo}}</li>
+			{{#each controller.arrangedContent}}
+			<li>{{#link-to 'project' this}}<img {{bindAttr src="thumb"}}><br>{{title}}{{/link-to}}</li>
 			{{/each}}
 		</ul>
 		{{outlet}}

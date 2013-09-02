@@ -6,7 +6,7 @@ define([
 
 	App.ProjectsRoute = Ember.Route.extend({
 		model: function() {
-			return App.Project.find();
+			return this.store.find('project');
 		}
 	});
 	

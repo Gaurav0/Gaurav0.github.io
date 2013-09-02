@@ -3,14 +3,16 @@
 		requirejs.config(config);
 		require([
 			"app",
-			"models/store",
 			"models/project",
+			"models/store",
+			"adapters/project",
+			"controllers/project",
+			"controllers/projects",
 			"views/app",
 			"views/index",
 			"views/projects",
 			"views/project",
 			"views/resume",
-			"controllers/project",
 			"router",
 			"routes/projects",
 			"routes/project"

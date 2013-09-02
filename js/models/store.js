@@ -14,12 +14,7 @@ define([
                 return true;
             }));
 		}
-	})
-
-	App.Store = DS.Store.extend({
-		revision: 13,
-		adapter: App.FixtureAdapter
 	});
 	
-	return App.Store;
+	return App.FixtureAdapter;
 });

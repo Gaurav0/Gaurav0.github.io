@@ -6,14 +6,23 @@ define([
 
 	App.ProjectRoute = Ember.Route.extend({
 		model: function(params) {
-			var projs = App.Project.query({ slug: params.slug });
-			return projs.one("didLoad", function() {
-				projs.resolve(projs.get("firstObject"));
+			return this.store.find('project', {slug: params.slug}).then(function(results) {
+				return results.objectAt(0);
 			});
 		},
 		
 		serialize: function(model) {
 			return { slug: model.get('slug') };
+		},
+		
+		activate: function() {
+			setTimeout(function() {
+				$('[href="#/projects"]').addClass("active");
+			}, 0);
+		},
+		
+		deactivate: function() {
+			$('[href="#/projects"]').removeClass("active");
 		}
 	});
 	
